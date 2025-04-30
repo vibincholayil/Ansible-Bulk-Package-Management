@@ -1,0 +1,19 @@
+---
+ - name: Bulk Package Installation & Removal
+   hosts: all
+   roles:
+    - Packagemgt
+   tasks:
+    - name: installing packages
+      ansible.builtin.apt:
+       name: "{{ item }}"
+       state: present
+      with_items:
+       - "{{install_packages}}"
+
+    - name: removing packages
+      ansible.builtin.apt:
+       name: "{{ item }}"
+       state: absent
+      with_items:
+       - "{{ remove_packages }}"

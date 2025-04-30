@@ -1,0 +1,4 @@
+---
+ - name: Bulk Package Installation & Removal
+   debug:
+    msg: "installing and removing packages"

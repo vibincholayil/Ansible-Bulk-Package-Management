@@ -1,0 +1,12 @@
+---
+install_packages:
+ - git
+ - vim
+ - wget
+ - curl
+
+
+remove_packages:
+ - telnet
+ - ftp
+ 
