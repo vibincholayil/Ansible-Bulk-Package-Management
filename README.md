@@ -1,12 +1,8 @@
 # Bulk Package Installation & Removal
-Scenario:
+
 Install git, vim, wget, curl and remove telnet, ftp using an Ansible Role.
 
-Question:
-You are asked to install git, vim, wget, and curl on all servers, and remove telnet and ftp packages.
-How would you design an Ansible Role and Playbook to automate this task?
 
-Answer:
 Create a role packagemgmt.
 In vars/main.yml, list the packages to install and remove.
 In tasks/main.yml, create tasks for installing and removing packages using package module.
