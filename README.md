@@ -1,4 +1,4 @@
-# Scenario 2: Bulk Package Installation & Removal
+# Bulk Package Installation & Removal
 Scenario:
 Install git, vim, wget, curl and remove telnet, ftp using an Ansible Role.
 
